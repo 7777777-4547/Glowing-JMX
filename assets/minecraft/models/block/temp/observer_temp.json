@@ -1,0 +1,74 @@
+{
+    "parent": "jmx:block/2/jmx_cube",
+    "textures": {
+        "south": "#bottom",
+        "east": "minecraft:block/observer_side",
+        "west": "minecraft:block/observer_side",
+        "down": "minecraft:block/observer_top",
+        "up": "minecraft:block/observer_top",
+        "north": "minecraft:block/observer_front",
+        "particle": "minecraft:block/observer_front"
+    },
+    "elements": [
+        {   
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  {
+                    "texture": "#top", 
+                    "cullface": "down" ,
+                    "jmx_material":"#jmx_mat_top",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_top"},
+                        {"jmx_tex": "#jmx_tex_top"}
+                    ]
+                },
+                "up":    {
+                    "texture": "#top",
+                    "cullface": "up" , 
+                    "jmx_material":"#jmx_mat_top",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_top"},
+                        {"jmx_tex": "#jmx_tex_top"}
+                    ]
+                },
+                "north": {
+                    "texture": "#front",
+                    "cullface": "north" , 
+                    "jmx_material":"#jmx_mat_front",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_front"},
+                        {"jmx_tex": "#jmx_tex_front"}
+                    ]
+                },
+                "south": {
+                    "texture": "#bottom",
+                    "cullface": "south" , 
+                    "jmx_material":"#jmx_mat_bottom",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_bottom"},
+                        {"jmx_tex": "#jmx_tex_bottom"}
+                    ]
+                },
+                "west":  {
+                    "texture": "#side",
+                    "cullface": "west" , 
+                    "jmx_material":"#jmx_mat_side",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_side"},
+                        {"jmx_tex": "#jmx_tex_side"}
+                    ]
+                },
+                "east":  {
+                    "texture": "#side",
+                    "cullface": "east" , 
+                    "jmx_material":"#jmx_mat_side",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_side"},
+                        {"jmx_tex": "#jmx_tex_side"}
+                    ]
+                }
+            }
+        }
+    ]
+}

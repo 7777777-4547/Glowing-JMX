@@ -1,0 +1,57 @@
+{
+    "textures": {
+        "particle": "minecraft:block/brewing_stand",
+        "stand": "minecraft:block/brewing_stand"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 8 ],
+            "to": [ 8, 16, 8 ],
+            "rotation": {
+                "origin": [ 8, 8, 8 ],
+                "axis": "y",
+                "angle": -45
+            },
+            "faces": {
+                "north": { 
+                    "uv": [ 8,  0, 16, 16 ], 
+                    "texture": "#stand",
+                    "jmx_material":"#jmx_mat_stand",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_stand"},
+                        {"jmx_tex": "#jmx_tex_stand"}
+                    ]
+                },
+                "south": { 
+                    "uv": [ 16, 0,  8, 16 ], 
+                    "texture": "#stand",
+                    "jmx_material":"#jmx_mat_stand",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_stand"},
+                        {"jmx_tex": "#jmx_tex_stand"}
+                    ]
+                }
+            }
+        }
+    ],
+    "jmx": {
+        "textures": {
+            "particle": "minecraft:block/brewing_stand",
+            "layered_textures": [               
+                { 
+                    "jmx_tex_stand": "minecraft:block/brewing_stand"
+                },
+                { 
+                    "jmx_tex_stand": "minecraft:block/brewing_stand_e"
+                }
+            ]
+        },
+        "materials": {
+            "jmx_mat_stand": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

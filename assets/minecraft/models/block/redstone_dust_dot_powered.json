@@ -1,0 +1,68 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "minecraft:block/redstone_dust_dot_e",
+        "line": "minecraft:block/redstone_dust_dot_e",
+        "overlay": "minecraft:block/redstone_dust_overlay"
+    },
+    "elements": [
+        {   "from": [ 0, 0.25, 0 ],
+            "to": [ 16, 0.25, 16 ],
+            "shade": false,
+            "faces": {
+                "up": { 
+                    "uv": [ 0, 0, 16, 16 ], 
+                    "texture": "#line", 
+                    "tintindex": 0 ,
+					"jmx_material":"#jmx_mat_line",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_line"}
+					]
+                },
+                "down": { 
+                    "uv": [ 0, 16, 16, 0 ], 
+                    "texture": "#line", 
+                    "tintindex": 0 ,
+					"jmx_material":"#jmx_mat_line",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_line"}
+					]
+                }
+            }
+        },
+        {   "from": [ 0, 0.25, 0 ],
+            "to": [ 16, 0.25, 16 ],
+            "shade": false,
+            "faces": {
+                "up": { 
+                    "uv": [ 0, 0, 16, 16 ], 
+                    "texture": "#overlay"
+                },
+                "down": {
+                    "uv": [ 0, 16, 16, 0 ], 
+                    "texture": "#overlay" 
+                }
+            }
+        }
+    ],
+    "jmx": {
+        "textures": {
+            "jmx_tex_particle": "minecraft:block/redstone_dust_dot_e",
+            "layered_textures": [
+                { 
+                    "jmx_tex_line": "minecraft:block/redstone_dust_dot_e"
+                },
+                { 
+                    "jmx_tex_line": "minecraft:block/block/redstone_dust_dot_e"                  
+                }
+            ]
+        },
+        "materials": {
+            "jmx_mat_line": {
+                "layers": [
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

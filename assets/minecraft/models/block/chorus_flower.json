@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/temp/template_chorus_flower",
+  "textures": {
+    "texture": "minecraft:block/chorus_flower"
+  },
+  "jmx": {
+      "textures": {
+          "particle": "minecraft:block/chorus_flower",
+          "layered_textures": [               
+              { "jmx_tex_texture": "minecraft:block/chorus_flower"},
+              { "jmx_tex_texture": "minecraft:block/chorus_flower_e"}
+          ]
+      }
+  }
+}

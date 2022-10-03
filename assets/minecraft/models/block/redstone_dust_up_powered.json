@@ -1,0 +1,62 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "minecraft:block/redstone_dust_dot_e",
+		"line": "minecraft:block/redstone_dust_line0_e",
+		"overlay": "minecraft:block/redstone_dust_overlay"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0.25],
+			"to": [16, 16, 0.25],
+			"shade": false,
+			"faces": {
+				"south": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#line",
+					"tintindex": 0,
+					"jmx_material": "#jmx_mat_line",
+					"layered_textures": [{ "jmx_tex": "#jmx_tex_line" }]
+				},
+				"north": {
+					"uv": [16, 0, 0, 16],
+					"texture": "#line",
+					"tintindex": 0,
+					"jmx_material": "#jmx_mat_line",
+					"layered_textures": [{ "jmx_tex": "#jmx_tex_line" }]
+				}
+			}
+		},
+		{
+			"from": [0, 0, 0.25],
+			"to": [16, 16, 0.25],
+			"shade": false,
+			"faces": {
+				"south": { "uv": [0, 0, 16, 16], "texture": "#overlay" },
+				"north": { "uv": [16, 0, 0, 16], "texture": "#overlay" }
+			}
+		}
+	],
+	"jmx": {
+		"textures": {
+			"jmx_tex_particle": "minecraft:block/redstone_dust_line0_e",
+			"layered_textures": [
+				{
+					"jmx_tex_line": "minecraft:block/redstone_dust_line0_e"
+				}
+			]
+		},
+		"materials": {
+			"jmx_mat_line": {
+				"layers": [
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+    "parent": "minecraft:block/observer",
+    "textures": {
+        "bottom": "minecraft:block/observer_back_on"
+    },
+    "jmx": {
+        "textures": {
+            "particle": "minecraft:block/observer_front",
+            "layered_textures": [               
+                { 
+                    "jmx_tex_bottom": "minecraft:block/observer_back_on"
+                },
+                { 
+                    "jmx_tex_bottom": "minecraft:block/observer_back_on_e"
+                }
+            ]
+        },
+        "materials": {
+            "jmx_mat_bottom": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

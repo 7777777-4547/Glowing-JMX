@@ -1,0 +1,34 @@
+{
+  "parent": "jmx:block/3/jmx_cube_all",
+  "textures": {
+    "all": "minecraft:block/sculk"
+  },
+  "jmx": {
+    "textures": {
+      "jmx_tex_particle": "minecraft:block/sculk",
+      "layered_textures": [
+        {
+          "jmx_tex_all": "minecraft:block/sculk"
+        },
+        {
+          "jmx_tex_all": "minecraft:block/sculk_e"
+        }
+      ]
+    },
+    "materials": {
+      "jmx_mat_all": {
+        "layers": [
+          {
+            "layer": "cutout_mipped"
+          },
+          {
+            "layer": "cutout_mipped",
+            "emissive": true,
+            "ambient_occlusion": false,
+            "diffuse": false
+          }
+        ]
+      }
+    }
+  }
+}

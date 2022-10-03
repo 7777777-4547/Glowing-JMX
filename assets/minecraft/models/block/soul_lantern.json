@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/temp/template_lantern",
+  "textures": {
+    "lantern": "minecraft:block/soul_lantern"
+  },
+  "jmx": {
+      "textures": {
+          "jmx_tex_particle": "minecraft:block/soul_lantern",
+          "layered_textures": [
+              { "jmx_tex_lantern": "minecraft:block/soul_lantern" },
+              { "jmx_tex_lantern": "minecraft:block/soul_lantern_e" }
+          ]
+      },
+      "materials": {
+          "jmx_mat_lantern": {
+              "layers": [
+                  { "layer": "cutout_mipped" },
+                  { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+              ]
+          }
+      }
+  }
+}

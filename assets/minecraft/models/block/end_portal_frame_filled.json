@@ -1,0 +1,64 @@
+{
+	"textures": {
+		"bottom": "minecraft:block/end_stone",
+		"top": "minecraft:block/end_portal_frame_top",
+		"particle": "minecraft:block/end_portal_frame_side",
+		"side": "minecraft:block/end_portal_frame_side",
+		"eye": "minecraft:block/end_portal_frame_eye"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 13, 16],
+			"faces": {
+				"north": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 3, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"from": [4, 13, 4],
+			"to": [12, 16, 12],
+			"faces": {
+				"north": {"uv": [4, 0, 12, 3], "texture": "#eye"},
+				"east": {"uv": [4, 0, 12, 3], "texture": "#eye"},
+				"south": {"uv": [4, 0, 12, 3], "texture": "#eye"},
+				"west": {"uv": [4, 0, 12, 3], "texture": "#eye"},
+				"up": {
+					"uv": [4, 4, 12, 12], 
+					"texture": "#eye", 
+					"cullface": "up",
+					"jmx_material":"#jmx_mat_eye",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_eye"},
+						{"jmx_tex": "#jmx_tex_eye"}
+					]
+				}
+			}
+		}
+	],
+	"jmx":{
+		"textures": {
+			"particle": "minecraft:block/end_portal_frame_side",
+			"layered_textures": [               
+			{ 
+				"jmx_tex_eye": "minecraft:block/end_portal_frame_eye"
+			},
+			{ 
+				"jmx_tex_eye": "minecraft:block/end_portal_frame_eye_e"
+			}
+			]
+		},
+		"materials": {
+			"jmx_mat_eye": {
+			"layers": [
+				{ "layer": "cutout_mipped" },
+				{ "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+			]
+			}
+		}
+	}
+}

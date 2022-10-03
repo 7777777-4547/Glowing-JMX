@@ -1,0 +1,27 @@
+{
+  "parent": "jmx:block/2/jmx_cross",
+  "textures": {
+    "cross": "minecraft:block/amethyst_cluster"
+  },
+  "jmx":{
+    "textures": {
+      "particle": "minecraft:block/amethyst_cluster",
+      "layered_textures": [               
+        { 
+          "jmx_tex_cross": "minecraft:block/amethyst_cluster"
+        },
+        { 
+          "jmx_tex_cross": "minecraft:block/amethyst_cluster_e"
+        }
+      ]
+    },
+    "materials": {
+      "jmx_mat_cross": {
+        "layers": [
+          { "layer": "cutout_mipped" },
+          { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+        ]
+      }
+    }
+  }
+}

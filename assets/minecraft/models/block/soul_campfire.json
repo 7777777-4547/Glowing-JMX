@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:block/temp/template_campfire",
+  "textures": {
+    "fire": "minecraft:block/soul_campfire_fire",
+    "lit_log": "minecraft:block/soul_campfire_log_lit"
+  },
+  "jmx": {
+      "textures": {
+          "jmx_tex_particle": "minecraft:block/campfire_log",
+          "layered_textures": [
+              { 
+                "jmx_tex_fire": "minecraft:block/soul_campfire_fire",
+                "jmx_tex_lit_log": "minecraft:block/soul_campfire_log_lit"
+              },
+              { 
+                "jmx_tex_lit_log": "minecraft:block/soul_campfire_log_lit_e"
+              }
+          ]
+      },
+      "materials": {
+          "jmx_mat_fire": {
+              "layers": [
+                  { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+              ]
+          },
+          "jmx_mat_lit_log": {
+              "layers": [
+                  { "layer": "cutout_mipped" },
+                  { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+              ]
+          }
+      }
+  }
+}

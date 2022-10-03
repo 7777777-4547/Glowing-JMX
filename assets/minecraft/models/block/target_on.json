@@ -1,0 +1,30 @@
+{
+    "parent": "jmx:block/2/jmx_cube_column",
+    "textures": {
+      "end": "minecraft:block/target_top_on",
+      "side": "minecraft:block/target_side_on"
+    },
+    "jmx": {
+        "textures": {
+            "jmx_tex_particle": "minecraft:block/target_side_on",
+            "layered_textures": [
+                { 
+                  "jmx_tex_end": "minecraft:block/target_top_on",
+                  "jmx_tex_side": "minecraft:block/target_side_on"
+                },
+                { 
+                  "jmx_tex_end": "minecraft:block/target_top_on_e",
+                  "jmx_tex_side": "minecraft:block/target_side_on_e"
+                }
+            ]
+        },
+        "materials": {
+            "jmx_mat_all": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

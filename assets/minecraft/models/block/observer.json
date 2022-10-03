@@ -1,0 +1,60 @@
+{
+    "parent": "jmx:block/2/jmx_cube",
+    "textures": {
+        "bottom": "minecraft:block/observer_back",
+        "side": "minecraft:block/observer_side",
+        "top": "minecraft:block/observer_top",
+        "front": "minecraft:block/observer_front",
+        "particle": "minecraft:block/observer_front"
+    },
+    "elements": [
+        {   
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  {
+                    "texture": "#top", 
+                    "cullface": "down"
+                },
+                "up":    {
+                    "texture": "#top",
+                    "cullface": "up"
+                },
+                "north": {
+                    "texture": "#front",
+                    "cullface": "north"
+                },
+                "south": {
+                    "texture": "#bottom",
+                    "cullface": "south" , 
+                    "jmx_material":"#jmx_mat_bottom",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_bottom"},
+                        {"jmx_tex": "#jmx_tex_bottom"}
+                    ]
+                },
+                "west":  {
+                    "texture": "#side",
+                    "cullface": "west"
+                },
+                "east":  {
+                    "texture": "#side",
+                    "cullface": "east"
+                }
+            }
+        }
+    ],
+    "jmx": {
+        "textures": {
+            "particle": "minecraft:block/observer_front",
+            "layered_textures": [               
+                { 
+                    "jmx_tex_bottom": "minecraft:block/observer_back"
+                },
+                { 
+                    "jmx_tex_bottom": "minecraft:block/observer_back"
+                }
+            ]
+        }
+    }
+}

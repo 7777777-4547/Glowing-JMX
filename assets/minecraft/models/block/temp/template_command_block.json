@@ -1,0 +1,74 @@
+{
+    "parent": "jmx:block/2/jmx_cube_directional",
+    "textures": {
+        "particle": "#back",
+        "down": "#side",
+        "up": "#side",
+        "north": "#front",
+        "east": "#side",
+        "south": "#back",
+        "west": "#side"
+    },
+    "jmx": {
+        "textures": {
+            "jmx_tex_particle": "#jmx_tex_back",
+            "layered_textures": [
+                { 
+                  "jmx_tex_north": "#jmx_tex_front",
+                  "jmx_tex_south": "#jmx_tex_back",
+                  "jmx_tex_down": "#jmx_tex_side",
+                  "jmx_tex_up": "#jmx_tex_side",
+                  "jmx_tex_east": "#jmx_tex_side",
+                  "jmx_tex_west": "#jmx_tex_side"
+                  
+                },
+                { 
+                  "jmx_tex_north": "#jmx_tex_front",
+                  "jmx_tex_south": "#jmx_tex_back",
+                  "jmx_tex_down": "#jmx_tex_side",
+                  "jmx_tex_up": "#jmx_tex_side",
+                  "jmx_tex_east": "#jmx_tex_side",
+                  "jmx_tex_west": "#jmx_tex_side"
+                }
+            ]
+        },
+        "materials": {
+          "jmx_mat_north": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+          },
+          "jmx_mat_south": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+          },
+          "jmx_mat_down": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+          },
+          "jmx_mat_up": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+          },
+          "jmx_mat_east": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+          },
+          "jmx_mat_west": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+          }
+        }
+    }
+}

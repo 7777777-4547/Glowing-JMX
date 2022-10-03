@@ -1,0 +1,123 @@
+{
+	"parent": "jmx:block/2/jmx_cube",
+    "textures": {
+        "particle": "minecraft:block/brewing_stand",
+        "base": "minecraft:block/brewing_stand_base",
+        "stand": "minecraft:block/brewing_stand"
+    },
+    "elements": [
+        {   "from": [ 7, 0, 7 ],
+            "to": [ 9, 14, 9 ],
+            "faces": {
+                "down":  { 
+                    "uv": [ 7, 7, 9,  9 ], 
+                    "texture": "#stand",
+                    "jmx_material":"#jmx_mat_stand",
+                    "layered_textures":[
+                        {"jmx_tex": "#jmx_tex_stand"},
+                        {"jmx_tex": "#jmx_tex_stand"}
+                    ]
+                },
+                "up":   { 
+                    "uv": [ 7, 7, 9,  9 ], 
+                    "texture": "#stand",
+					"jmx_material":"#jmx_mat_stand",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_stand"},
+						{"jmx_tex": "#jmx_tex_stand"}
+					]
+                },
+                "north": { 
+                    "uv": [ 7, 2, 9, 16 ], 
+                    "texture": "#stand",
+					"jmx_material":"#jmx_mat_stand",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_stand"},
+						{"jmx_tex": "#jmx_tex_stand"}
+					]
+                },
+                "south": { 
+                    "uv": [ 7, 2, 9, 16 ], 
+                    "texture": "#stand",
+					"jmx_material":"#jmx_mat_stand",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_stand"},
+						{"jmx_tex": "#jmx_tex_stand"}
+					]
+                },
+                "west":  { 
+                    "uv": [ 7, 2, 9, 16 ], 
+                    "texture": "#stand",
+					"jmx_material":"#jmx_mat_stand",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_stand"},
+						{"jmx_tex": "#jmx_tex_stand"}
+					]
+                },
+                "east":  { 
+                    "uv": [ 7, 2, 9, 16 ], 
+                    "texture": "#stand",
+					"jmx_material":"#jmx_mat_stand",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_stand"},
+						{"jmx_tex": "#jmx_tex_stand"}
+					]
+                }
+            }
+        },
+        {   "from": [ 9, 0, 5 ],
+            "to": [ 15, 2, 11 ],
+            "faces": {
+                "down":  { "uv": [ 9,  5, 15, 11 ], "texture": "#base", "cullface": "down" },
+                "up":    { "uv": [ 9,  5, 15, 11 ], "texture": "#base" },
+                "north": { "uv": [ 9, 14, 15, 16 ], "texture": "#base" },
+                "south": { "uv": [ 9, 14, 15, 16 ], "texture": "#base" },
+                "west":  { "uv": [ 5, 14, 11, 16 ], "texture": "#base" },
+                "east":  { "uv": [ 5, 14, 11, 16 ], "texture": "#base" }
+            }
+        },
+        {   "from": [ 2, 0, 1 ],
+            "to": [ 8, 2, 7 ],
+            "faces": {
+                "down":  { "uv": [ 2,  1, 8,  7 ], "texture": "#base", "cullface": "down" },
+                "up":    { "uv": [ 2,  1, 8,  7 ], "texture": "#base" },
+                "north": { "uv": [ 2, 14, 8, 16 ], "texture": "#base" },
+                "south": { "uv": [ 2, 14, 8, 16 ], "texture": "#base" },
+                "west":  { "uv": [ 1, 14, 7, 16 ], "texture": "#base" },
+                "east":  { "uv": [ 1, 14, 7, 16 ], "texture": "#base" }
+            }
+        },
+        {   "from": [ 2, 0, 9 ],
+            "to": [ 8, 2, 15 ],
+            "faces": {
+                "down":  { "uv": [ 2,  9,  8, 15 ], "texture": "#base", "cullface": "down" },
+                "up":    { "uv": [ 2,  9,  8, 15 ], "texture": "#base" },
+                "north": { "uv": [ 2, 14,  8, 16 ], "texture": "#base" },
+                "south": { "uv": [ 2, 14,  8, 16 ], "texture": "#base" },
+                "west":  { "uv": [ 9, 14, 15, 16 ], "texture": "#base" },
+                "east":  { "uv": [ 9, 14, 15, 16 ], "texture": "#base" }
+            }
+        }
+    ],
+    "jmx": {
+        "textures": {
+            "particle": "minecraft:block/brewing_stand",
+            "layered_textures": [               
+                { 
+                    "jmx_tex_stand": "minecraft:block/brewing_stand"
+                },
+                { 
+                    "jmx_tex_stand": "minecraft:block/brewing_stand_e"
+                }
+            ]
+        },
+        "materials": {
+            "jmx_mat_stand": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

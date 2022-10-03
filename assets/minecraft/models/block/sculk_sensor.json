@@ -1,0 +1,250 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"bottom": "minecraft:block/sculk_sensor_bottom",
+		"side": "minecraft:block/sculk_sensor_side",
+		"tendrils": "minecraft:block/sculk_sensor_tendril_inactive",
+		"top": "minecraft:block/sculk_sensor_top",
+		"particle": "minecraft:block/sculk_sensor_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {
+					"uv": [0, 8, 16, 16],
+					"texture": "#side",
+					"cullface": "north",
+					"jmx_material": "#jmx_mat_side",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_side" },
+						{ "jmx_tex": "#jmx_tex_side" }
+					]
+				},
+				"east": {
+					"uv": [0, 8, 16, 16],
+					"texture": "#side",
+					"cullface": "east",
+					"jmx_material": "#jmx_mat_side",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_side" },
+						{ "jmx_tex": "#jmx_tex_side" }
+					]
+				},
+				"south": {
+					"uv": [0, 8, 16, 16],
+					"texture": "#side",
+					"cullface": "south",
+					"jmx_material": "#jmx_mat_side",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_side" },
+						{ "jmx_tex": "#jmx_tex_side" }
+					]
+				},
+				"west": {
+					"uv": [0, 8, 16, 16],
+					"texture": "#side",
+					"cullface": "west",
+					"jmx_material": "#jmx_mat_side",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_side" },
+						{ "jmx_tex": "#jmx_tex_side" }
+					]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#top",
+					"jmx_material": "#jmx_mat_top",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_top" },
+						{ "jmx_tex": "#jmx_tex_top" }
+					]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#bottom",
+					"cullface": "down",
+					"jmx_material": "#jmx_mat_bottom",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_bottom" },
+						{ "jmx_tex": "#jmx_tex_bottom" }
+					]
+				}
+			}
+		},
+		{
+			"from": [-1, 8, 3],
+			"to": [7, 16, 3],
+			"rotation": { "angle": 45, "axis": "y", "origin": [3, 12, 3] },
+			"faces": {
+				"north": {
+					"uv": [4, 8, 12, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				},
+				"south": {
+					"uv": [12, 8, 4, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				}
+			}
+		},
+		{
+			"from": [9, 8, 3],
+			"to": [17, 16, 3],
+			"rotation": { "angle": -45, "axis": "y", "origin": [13, 12, 3] },
+			"faces": {
+				"north": {
+					"uv": [12, 8, 4, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				},
+				"south": {
+					"uv": [4, 8, 12, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				}
+			}
+		},
+		{
+			"from": [9, 8, 13],
+			"to": [17, 16, 13],
+			"rotation": { "angle": 45, "axis": "y", "origin": [13, 12, 13] },
+			"faces": {
+				"north": {
+					"uv": [12, 8, 4, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				},
+				"south": {
+					"uv": [4, 8, 12, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				}
+			}
+		},
+		{
+			"from": [-1, 8, 13],
+			"to": [7, 16, 13],
+			"rotation": { "angle": -45, "axis": "y", "origin": [3, 12, 13] },
+			"faces": {
+				"north": {
+					"uv": [4, 8, 12, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				},
+				"south": {
+					"uv": [12, 8, 4, 16],
+					"texture": "#tendrils",
+					"jmx_material": "#jmx_mat_tendrils",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_tendrils" },
+						{ "jmx_tex": "#jmx_tex_tendrils" }
+					]
+				}
+			}
+		}
+	],
+	"jmx": {
+		"textures": {
+			"jmx_tex_particle": "minecraft:block/sculk_sensor_side",
+			"layered_textures": [
+				{
+					"jmx_tex_bottom": "minecraft:block/sculk_sensor_bottom",
+					"jmx_tex_side": "minecraft:block/sculk_sensor_side",
+					"jmx_tex_top": "minecraft:block/sculk_sensor_top",
+					"jmx_tex_tendrils": "#jmx_tex_tendrils"
+				},
+				{
+					"jmx_tex_bottom": "minecraft:block/sculk_sensor_bottom_e",
+					"jmx_tex_side": "minecraft:block/sculk_sensor_side_e",
+					"jmx_tex_top": "minecraft:block/sculk_sensor_top_e",
+					"jmx_tex_tendrils": "#jmx_tex_tendrils"
+				}
+			]
+		},
+		"materials": {
+			"jmx_mat_bottom": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			},
+			"jmx_mat_side": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			},
+			"jmx_mat_top": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			},
+			"jmx_mat_tendrils": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": false,
+						"ambient_occlusion": true,
+						"diffuse": false
+					}
+				]
+			}
+		}
+	}
+}

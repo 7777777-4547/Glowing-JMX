@@ -1,0 +1,28 @@
+{
+	"parent": "jmx:block/2/jmx_cube_all",
+  "textures": {
+    "all": "minecraft:block/raw_copper_block"
+  },
+	"jmx": {
+		"textures": {
+			"jmx_tex_particle": "minecraft:block/raw_copper_block",
+			"layered_textures": [
+				{ "jmx_tex_all": "minecraft:block/raw_copper_block" },
+				{ "jmx_tex_all": "minecraft:block/raw_copper_block_e" }
+			]
+		},
+		"materials": {
+			"jmx_mat_all": {
+				"layers": [
+					{ "layer": "cutout_mipped" },
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			}
+		}
+	}
+}

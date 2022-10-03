@@ -1,0 +1,23 @@
+{
+    "parent": "jmx:block/2/jmx_cube_all",
+    "textures": {
+        "all": "minecraft:block/deepslate_lapis_ore"
+    },
+    "jmx": {
+        "textures": {
+            "jmx_tex_particle": "minecraft:block/deepslate_lapis_ore",
+            "layered_textures": [
+                { "jmx_tex_all": "minecraft:block/deepslate_lapis_ore" },
+                { "jmx_tex_all": "minecraft:block/deepslate_lapis_ore_e" }
+            ]
+        },
+        "materials": {
+            "jmx_mat_all": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

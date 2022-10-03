@@ -1,0 +1,68 @@
+{
+	"parent": "minecraft:block/temp/template_sculk_shrieker",
+	"textures": {
+		"bottom": "minecraft:block/sculk_shrieker_bottom",
+		"inner_top": "minecraft:block/sculk_shrieker_inner_top",
+		"particle": "minecraft:block/sculk_shrieker_bottom",
+		"side": "minecraft:block/sculk_shrieker_side",
+		"top": "minecraft:block/sculk_shrieker_top"
+	},
+	"jmx": {
+		"textures": {
+			"jmx_tex_particle": "minecraft:block/sculk_shrieker_bottom",
+			"layered_textures": [
+				{
+					"jmx_tex_side": "minecraft:block/sculk_shrieker_side",
+					"jmx_tex_inner_top": "minecraft:block/sculk_shrieker_inner_top",
+					"jmx_tex_bottom": "minecraft:block/sculk_shrieker_bottom"
+				},
+				{
+					"jmx_tex_side": "minecraft:block/sculk_shrieker_side_e",
+					"jmx_tex_inner_top": "minecraft:block/sculk_shrieker_inner_top_e",
+					"jmx_tex_bottom": "minecraft:block/sculk_shrieker_inner_bottom_e"
+				}
+			]
+		},
+		"materials": {
+			"jmx_mat_side": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			},
+			"jmx_mat_inner_top": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			},
+			"jmx_mat_bottom": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:block/temp/temp_rail_flat",
+  "textures": {
+    "rail": "minecraft:block/activator_rail_on"
+  },
+  "jmx":{
+    "textures": {
+      "particle": "minecraft:block/activator_rail_on",
+      "layered_textures": [               
+        { 
+          "jmx_tex_rail": "minecraft:block/activator_rail_on"
+        },
+        { 
+          "jmx_tex_rail": "minecraft:block/activator_rail_on_e"
+        }
+      ]
+    },
+    "materials": {
+      "jmx_mat_rail": {
+        "layers": [
+          { "layer": "cutout_mipped" },
+          { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+        ]
+      }
+    }
+  }
+}

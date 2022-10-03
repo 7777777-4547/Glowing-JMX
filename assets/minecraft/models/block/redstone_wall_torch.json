@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/temp/template_wall_torch",
+  "textures": {
+    "torch": "minecraft:block/redstone_torch"
+  },
+  "jmx": {
+      "textures": {
+          "jmx_tex_particle": "minecraft:block/redstone_torch",
+          "layered_textures": [
+              { "jmx_tex_torch": "minecraft:block/redstone_torch" },
+              { "jmx_tex_torch": "minecraft:block/redstone_torch_e" }
+          ]
+      },
+      "materials": {
+          "jmx_mat_torch": {
+              "layers": [
+                  { "layer": "cutout_mipped" },
+                  { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+              ]
+          }
+      }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/template_fire_floor",
+  "textures": {
+    "fire": "minecraft:block/soul_fire_1"
+  },
+  "jmx": {
+      "textures": {
+          "jmx_tex_particle": "minecraft:block/soul_fire_1",
+          "layered_textures": [
+              { 
+                "jmx_tex_fire": "minecraft:block/soul_fire_1"
+              }
+          ]
+      },
+      "materials": {
+          "jmx_mat_fire": {
+              "layers": [
+                  { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+              ]
+          }
+      }
+  }
+}

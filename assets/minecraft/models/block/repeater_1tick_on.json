@@ -1,0 +1,216 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"slab": "minecraft:block/smooth_stone",
+		"particle": "minecraft:block/repeater_on",
+		"top": "minecraft:block/repeater_on",
+		"lit": "minecraft:block/redstone_torch"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 2, 16],
+			"faces": {
+				"north": {
+					"uv": [0, 14, 16, 16],
+					"texture": "#slab",
+					"cullface": "north"
+				},
+				"east": {
+					"uv": [0, 14, 16, 16],
+					"texture": "#slab",
+					"cullface": "east"
+				},
+				"south": {
+					"uv": [0, 14, 16, 16],
+					"texture": "#slab",
+					"cullface": "south"
+				},
+				"west": {
+					"uv": [0, 14, 16, 16],
+					"texture": "#slab",
+					"cullface": "west"
+				},
+				"up": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#top",
+					"jmx_material": "#jmx_mat_top",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_top" },
+						{ "jmx_tex": "#jmx_tex_top" }
+					]
+				},
+				"down": { "uv": [0, 0, 16, 16], "texture": "#slab", "cullface": "down" }
+			}
+		},
+		{
+			"from": [7, 7, 6],
+			"to": [9, 7, 8],
+			"faces": {
+				"up": {
+					"uv": [7, 6, 9, 8],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				}
+			}
+		},
+		{
+			"from": [7, 2, 5],
+			"to": [9, 8, 9],
+			"faces": {
+				"east": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				},
+				"west": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				}
+			}
+		},
+		{
+			"from": [6, 2, 6],
+			"to": [10, 8, 8],
+			"faces": {
+				"north": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				},
+				"south": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				}
+			}
+		},
+		{
+			"from": [7, 7, 2],
+			"to": [9, 7, 4],
+			"faces": {
+				"up": {
+					"uv": [7, 6, 9, 8],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				}
+			}
+		},
+		{
+			"from": [7, 2, 1],
+			"to": [9, 8, 5],
+			"faces": {
+				"east": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				},
+				"west": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				}
+			}
+		},
+		{
+			"from": [6, 2, 2],
+			"to": [10, 8, 4],
+			"faces": {
+				"north": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				},
+				"south": {
+					"uv": [6, 5, 10, 11],
+					"texture": "#lit",
+					"jmx_material": "#jmx_mat_lit",
+					"layered_textures": [
+						{ "jmx_tex": "#jmx_tex_lit" },
+						{ "jmx_tex": "#jmx_tex_lit" }
+					]
+				}
+			}
+		}
+	],
+	"jmx": {
+		"textures": {
+			"jmx_tex_particle": "minecraft:block/repeater_on",
+			"layered_textures": [
+				{
+					"jmx_tex_lit": "minecraft:block/redstone_torch",
+					"jmx_tex_top": "minecraft:block/repeater_on"
+				},
+				{
+					"jmx_tex_lit": "minecraft:block/redstone_torch_e",
+					"jmx_tex_top": "minecraft:block/repeater_on_e"
+				}
+			]
+		},
+		"materials": {
+			"jmx_mat_lit": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			},
+			"jmx_mat_top": {
+				"layers": [
+					{
+						"layer": "cutout_mipped"
+					},
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			}
+		}
+	}
+}

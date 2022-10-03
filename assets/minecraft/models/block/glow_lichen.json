@@ -1,0 +1,50 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "minecraft:block/glow_lichen",
+		"glow_lichen": "minecraft:block/glow_lichen"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0.1],
+			"to": [16, 16, 0.1],
+			"faces": {
+				"north": {
+					"uv": [16, 0, 0, 16], 
+					"texture": "#glow_lichen",
+					"jmx_material":"#jmx_mat_glow_lichen",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_glow_lichen"},
+						{"jmx_tex": "#jmx_tex_glow_lichen"}
+					]
+				},
+				"south": {
+					"uv": [0, 0, 16, 16], 
+					"texture": "#glow_lichen",
+					"jmx_material":"#jmx_mat_glow_lichen",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_glow_lichen"},
+						{"jmx_tex": "#jmx_tex_glow_lichen"}
+					]
+				}
+			}
+		}
+	],
+    "jmx": {
+        "textures": {
+            "jmx_tex_particle": "minecraft:block/glow_lichen",
+            "layered_textures": [
+                { "jmx_tex_glow_lichen": "minecraft:block/glow_lichen" },
+                { "jmx_tex_glow_lichen": "minecraft:block/glow_lichen_e" }
+            ]
+        },
+        "materials": {
+            "jmx_mat_glow_lichen": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            }
+        }
+    }
+}

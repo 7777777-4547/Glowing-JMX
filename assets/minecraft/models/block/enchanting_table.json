@@ -1,0 +1,96 @@
+{
+	"parent": "jmx:block/2/jmx_cube",
+	"textures": {
+		"particle": "minecraft:block/enchanting_table_bottom",
+		"bottom": "minecraft:block/enchanting_table_bottom",
+		"top": "minecraft:block/enchanting_table_top",
+		"side": "minecraft:block/enchanting_table_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 12, 16],
+			"faces": {
+				"north": {
+					"texture": "#side", 
+					"cullface": "north",
+					"jmx_material":"#jmx_mat_side",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_side"},
+						{"jmx_tex": "#jmx_tex_side"}
+					]
+				},
+				"east": {
+					"texture": "#side", 
+					"cullface": "east",
+					"jmx_material":"#jmx_mat_side",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_side"},
+						{"jmx_tex": "#jmx_tex_side"}
+					]
+				},
+				"south": {
+					"texture": "#side", 
+					"cullface": "south",
+					"jmx_material":"#jmx_mat_side",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_side"},
+						{"jmx_tex": "#jmx_tex_side"}
+					]
+				},
+				"west": {
+					"texture": "#side", 
+					"cullface": "west",
+					"jmx_material":"#jmx_mat_side",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_side"},
+						{"jmx_tex": "#jmx_tex_side"}
+					]
+				},
+				"up": {
+					"uv": [0, 0, 16, 16], 
+					"texture": "#top",
+					"jmx_material":"#jmx_mat_top",
+					"layered_textures":[
+						{"jmx_tex": "#jmx_tex_top"},
+						{"jmx_tex": "#jmx_tex_top"}
+					]
+				},
+				"down": {
+					"uv": [0, 0, 16, 16], 
+					"texture": "#bottom", 
+					"cullface": "down"
+				}
+			}
+		}
+	],
+    "jmx": {
+        "textures": {
+            "particle": "minecraft:block/enchanting_table_bottom",
+            "layered_textures": [               
+                { 
+                    "jmx_tex_top": "minecraft:block/enchanting_table_top",
+                    "jmx_tex_side": "minecraft:block/enchanting_table_side"
+                },
+                { 
+                    "jmx_tex_top": "minecraft:block/enchanting_table_top_e",
+                    "jmx_tex_side": "minecraft:block/enchanting_table_side_e"
+                }
+            ]
+        },
+        "materials": {
+            "jmx_mat_top": {
+                "layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+            },
+			"jmx_mat_side": {
+				"layers": [
+                    { "layer": "cutout_mipped" },
+                    { "layer": "cutout_mipped", "emissive": true, "ambient_occlusion": false, "diffuse": false }
+                ]
+			}
+        }
+    }
+}

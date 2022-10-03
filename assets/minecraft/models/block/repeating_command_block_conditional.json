@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:block/temp/template_command_block",
+  "textures": {
+    "front": "minecraft:block/repeating_command_block_front",
+    "back": "minecraft:block/repeating_command_block_back",
+    "side": "minecraft:block/repeating_command_block_conditional"
+  },
+  "jmx": {
+      "textures": {
+          "jmx_tex_particle": "minecraft:block/repeating_command_block_back",
+          "layered_textures": [
+              { 
+                "jmx_tex_front": "minecraft:block/repeating_command_block_front",
+                "jmx_tex_back": "minecraft:block/repeating_command_block_back",
+                "jmx_tex_side": "minecraft:block/repeating_command_block_conditional"
+                
+              },
+              { 
+                "jmx_tex_front": "minecraft:block/repeating_command_block_front_e",
+                "jmx_tex_back": "minecraft:block/repeating_command_block_back_e",
+                "jmx_tex_side": "minecraft:block/repeating_command_block_conditional_e"
+              }
+          ]
+      }
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"parent": "jmx:block/2/jmx_cube_column",
+	"textures": {
+		"end": "minecraft:block/ancient_debris_top",
+		"side": "minecraft:block/ancient_debris_side"
+	},
+	"jmx": {
+		"textures": {
+			"jmx_tex_particle": "minecraft:block/ancient_debris_side",
+			"layered_textures": [
+				{
+					"jmx_tex_side": "minecraft:block/ancient_debris_side",
+					"jmx_tex_end": "minecraft:block/ancient_debris_top"
+				},
+				{
+					"jmx_tex_side": "minecraft:block/ancient_debris_side_e",
+					"jmx_tex_end": "minecraft:block/ancient_debris_top_e"
+				}
+			]
+		},
+		"materials": {
+			"jmx_mat_all": {
+				"layers": [
+					{ "layer": "cutout_mipped" },
+					{
+						"layer": "cutout_mipped",
+						"emissive": true,
+						"ambient_occlusion": false,
+						"diffuse": false
+					}
+				]
+			}
+		}
+	}
+}
